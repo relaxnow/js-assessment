@@ -1,3 +1,4 @@
+'use strict';
 define([ 'use!underscore' ], function(_) {
   describe("the module pattern", function() {
     var fn = function() {};

@@ -1,3 +1,4 @@
+'use strict';
 define([ 'use!underscore' ], function (_) {
   describe("regexps", function () {
     var lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.";

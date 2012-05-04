@@ -1,3 +1,4 @@
+'use strict';
 define([ 'use!underscore' ], function (_) {
   describe("numbers", function () {
     var product1PriceDollars, product2PriceDollars, fn;

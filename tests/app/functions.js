@@ -1,3 +1,4 @@
+'use strict';
 define([ 'use!underscore' ], function(_) {
   describe("functions", function() {
     var sayIt = function(greeting, name, punctuation) {

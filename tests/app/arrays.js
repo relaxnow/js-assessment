@@ -54,7 +54,7 @@ define([ 'use!underscore' ], function(_) {
       expect(result.join(' ')).to.be('1 2 z 3 4');
     });
 
-    it("you should be able to count the occurences of an item in an array", function() {
+    it("you should be able to count the occurrences of an item in an array", function() {
       // define a function for fn so that the following will pass
       var result = fn([ 1, 1, 1, 2, 1, 3 ], 1);
 

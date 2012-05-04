@@ -1,13 +1,13 @@
 var tests = [
   // link to test files here
 
-  'tests/app/arrays',
-  'tests/app/async',
-  'tests/app/flowControl',
-  'tests/app/functions',
-  'tests/app/modules',
-  'tests/app/objects',
-  'tests/app/views'
+  'order!tests/app/arrays',
+  'order!tests/app/async',
+  'order!tests/app/flowControl',
+  'order!tests/app/functions',
+  'order!tests/app/modules',
+  'order!tests/app/objects',
+  'order!tests/app/views'
 ];
 
 require(tests, function() {

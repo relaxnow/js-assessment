@@ -17,7 +17,8 @@ require.config({
 
     // Shim Plugin
     use : '../lib/plugins/use',
-    text : '../lib/plugins/text'
+    text : '../lib/plugins/text',
+    order : '../lib/plugins/order'
   },
 
   use : {

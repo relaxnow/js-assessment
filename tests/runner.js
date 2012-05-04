@@ -6,8 +6,7 @@ var tests = [
   'order!tests/app/flowControl',
   'order!tests/app/functions',
   'order!tests/app/modules',
-  'order!tests/app/objects',
-  'order!tests/app/views'
+  'order!tests/app/objects'
 ];
 
 require(tests, function() {

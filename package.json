@@ -1,12 +1,12 @@
 {
-  "author": "Rebecca Murphey <rmurphey@gmail.com> (http://rmurphey.com)",
+  "author": "Boy Baukema <boy@ibuildings.nl> (http://ibuildings.nl)",
   "name": "js-assessment",
-  "description": "A test-driven assessment of JavaScript skills",
+  "description": "Training for the JavaScript Bootcamp",
   "version": "0.1.0",
-  "homepage": "http://rmurphey.com",
+  "homepage": "http://www.ibuildings.nl",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rmurphey/js-assessment.git"
+    "url": "git://github.com/relaxnow/js-assessment.git"
   },
   "engines": {
     "node": "~0.6.8"
@@ -24,6 +24,6 @@
   },
   "bin" : "bin/serve",
   "bugs" : {
-    "url" : "https://github.com/rmurphey/js-assessment/issues"
+    "url" : "https://github.com/relaxnow/js-assessment/issues"
   }
 }

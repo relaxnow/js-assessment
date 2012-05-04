@@ -1,3 +1,4 @@
+'use strict';
 define([ 'use!underscore' ], function(_) {
   describe("objects and context", function() {
     var a, b, C, fn;

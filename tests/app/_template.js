@@ -1,3 +1,4 @@
+'use strict';
 define([ 'use!underscore' ], function (_) {
   describe("", function () {
     var fn;

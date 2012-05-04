@@ -1,3 +1,4 @@
+'use strict';
 define([ 'jquery', 'use!underscore' ], function($, _) {
   describe("async behavior", function() {
     var promise, fn;

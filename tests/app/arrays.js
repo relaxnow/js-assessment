@@ -1,3 +1,4 @@
+'use strict';
 define([ 'use!underscore' ], function(_) {
   describe("arrays", function() {
     var a, fn;

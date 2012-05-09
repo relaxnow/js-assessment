@@ -46,8 +46,10 @@ define([ 'use!underscore' ], function (_) {
       var tutorialStart = dpc.tutorials[0].start;
 
       // Convert tutorialStart here
+      // Hint: there is no setTimezone... you can only set the timezone upon initialization of a Date...
+      var result = tutorialStart;
 
-      var result = tutorialStart.getHours() + ':' + tutorialStart.getMinutes() + ':' + tutorialStart.getSeconds();
+      result = tutorialStart.getHours() + ':' + tutorialStart.getMinutes() + ':' + tutorialStart.getSeconds();
       expect(result).to.be('23:30:00');
     });
   });

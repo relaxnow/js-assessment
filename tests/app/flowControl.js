@@ -17,8 +17,6 @@ define([ 'use!underscore' ], function(_) {
         // otherwise the function should return the number
       };
 
-      expect(fn()).not.to.be.ok();
-      expect(fn(2)).to.be(2);
       expect(fn(3)).to.be('fizz');
       expect(fn(5)).to.be('buzz');
       expect(fn(15)).to.be('fizzbuzz');

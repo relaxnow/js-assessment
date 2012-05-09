@@ -28,7 +28,7 @@ define([ 'jquery', 'use!underscore' ], function($, _) {
       var flag = false;
 
       fn = function() {
-        // write a function that makes the test pass
+        return true;
       };
 
       fn().then(function(result) {

@@ -7,20 +7,6 @@ define([ 'jquery', 'use!underscore' ], function($, _) {
       fn = function() { };
     });
 
-    it("you should understand how to uses 'promises'", function(done) {
-      var flag = false;
-
-      fn = function() {
-        // write a function that makes the test pass
-      };
-
-      fn().then(function(result) {
-        flag = result;
-        expect(flag).to.be(true);
-        done();
-      });
-    });
-
     it("you should be able to receive data from the server and manipulate it", function(done) {
       var peopleArray,
           url = '/data/testdata.json',
@@ -36,6 +22,20 @@ define([ 'jquery', 'use!underscore' ], function($, _) {
       // b) manipulated so the tests will pass.
 
       tests();
+    });
+
+    it("BONUS: you should understand how to uses 'promises'", function(done) {
+      var flag = false;
+
+      fn = function() {
+        // write a function that makes the test pass
+      };
+
+      fn().then(function(result) {
+        flag = result;
+        expect(flag).to.be(true);
+        done();
+      });
     });
   });
 });

@@ -32,7 +32,7 @@ define([ 'use!underscore' ], function (_) {
       var result = dpc.tutorials[0].start;
       result.setDate(new Date('Thu, 7 Jun 2012 10:00:00 +0200'));
 
-      expect(result).to.equal(new Date('Thu, 7 Jun 2012 10:00:00 +0200'));
+      expect(result.valueOf()).to.equal((new Date('Thu, 7 Jun 2012 10:00:00 +0200')).valueOf());
     });
 
     it("you should be able to calculate durations from two dates", function() {

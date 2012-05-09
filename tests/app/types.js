@@ -6,11 +6,13 @@ define([ 'use!underscore' ], function (_) {
     beforeEach(function () {
       fn = function() {};
       rhino = {
+        id: 12,
         feet: [1, 2, 3, 4],
         owner: null,
         male: '0'
       };
       rhino2 = {
+        id: 12,
         feet: [1, 2, 3, 4],
         owner: null,
         male: '0'
@@ -52,6 +54,9 @@ define([ 'use!underscore' ], function (_) {
 
     it("you should know how to compare objects", function(){
       // Redefine fn here
+      // Note: can you do this with == or ===?
+      // How would you do this in PHP?
+      // Think also of valueOf
 
       expect(fn(rhino, rhino2)).to.be(true);
     });

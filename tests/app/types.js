@@ -24,8 +24,8 @@ define([ 'use!underscore' ], function (_) {
 
       // Fix this condition, make sure your solution also works in IE7
       // Hint: look up array.isArray polyfill
-      if (typeof result.feet === 'Array') {
-        result = result.feet.length;
+      if (typeof rhino.feet === 'Array') {
+        result = rhino.feet.length;
       }
 
       expect(result).to.be(4);

@@ -21,12 +21,14 @@ define([ 'use!underscore' ], function (_) {
       expect(" trimmed ".trim()).to.be("trimmed");
     });
 
-    it("you should know how to convert a number to a string", function() {
+    it("you should know how to convert string to a number", function() {
       // Redefine fn here
+      // Note that you have a choice of the + operator or the Number function
+      // experiment with both!
 
-      expect(fn(19)).to.be("19");
+      expect(fn('19')).to.be(19);
       expect(fn(null)).to.be(0);
-      expect(fn(undefined)).to.be(0);
+      expect(isNaN(fn(undefined))).to.be(true);
     });
 
     it("you should know how to convert string to a number strictly", function() {

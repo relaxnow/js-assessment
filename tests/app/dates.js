@@ -24,7 +24,7 @@ define([ 'use!underscore' ], function (_) {
       // Fix this result
       var result = dpc.tutorials[0].start.getYear();
 
-      expect(result).to.be('2012');
+      expect(result).to.be(2012);
     });
 
     it("you should know what setDate is for", function() {

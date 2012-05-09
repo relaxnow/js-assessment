@@ -1,7 +1,7 @@
 'use strict';
 define([ 'use!underscore' ], function (_) {
   describe("regexps", function () {
-    var lorem, fn = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.";
+    var fn, lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.";
 
     beforeEach(function () {
       fn = function() {};

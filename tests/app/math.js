@@ -24,7 +24,7 @@ define([ 'use!underscore' ], function (_) {
     it("you should know how to generate random integers between 1 and 1000", function() {
 
 
-      expect(fn()).not.to.equal(fn()));
+      expect(fn()).not.to.equal(fn());
       expect(fn()).to.be.lessThan(1000);
       expect(fn()).to.be.greaterThan(1);
       expect(fn() % 1).to.be(0);

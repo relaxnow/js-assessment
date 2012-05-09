@@ -32,16 +32,16 @@ define([ 'use!underscore' ], function (_) {
     it("you should know how to convert string to a number strictly", function() {
       // Redefine fn here
 
-      expect(fn("9").to.be(9));
+      expect(fn("9")).to.be(9);
       expect(isNaN(fn("99 bottles"))).to.be(true);
     });
 
     it("you should know how to convert string to a number loosely", function() {
       // Redefine fn here
 
-      expect(fn("9").to.be(9));
-      expect(isNaN(fn("99 bottles"))).to.be(99);
-      expect(isNaN(fn("099 bottles"))).to.be(99);
+      expect(fn("9")).to.be(9);
+      expect(fn("99 bottles")).to.be(99);
+      expect(fn("099 bottles")).to.be(99);
     });
   });
 });

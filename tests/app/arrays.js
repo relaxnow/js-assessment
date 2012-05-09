@@ -13,7 +13,7 @@ define([ 'use!underscore' ], function(_) {
       expect(fn(a, 3)).to.be(2);
     });
 
-    it("you should be able to add the values of an array", function() {
+    it("you should be able to sum the values of an array", function() {
       // define a function for fn so that the following will pass
       expect(fn(a)).to.be(10);
     });
@@ -62,7 +62,7 @@ define([ 'use!underscore' ], function(_) {
       expect(result).to.be(4);
     });
 
-    it("you should be able to find duplicates in an array", function() {
+    it("you should be able to find duplicates in an array and return only the duplicated items", function() {
       // define a function for fn so that the following will pass
       var result = fn([ 1, 2, 4, 4, 3, 3, 1, 5 ]);
 

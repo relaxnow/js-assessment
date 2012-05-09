@@ -28,6 +28,9 @@ define([ 'jquery', 'use!underscore' ], function($, _) {
       var flag = false;
 
       fn = function() {
+        // Note that this uses JQuery Deferred Objects:
+        // http://api.jquery.com/category/deferred-object/
+
         // write a function that makes the test pass
       };
 

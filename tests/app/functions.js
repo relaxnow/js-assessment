@@ -82,24 +82,6 @@ define([ 'use!underscore' ], function(_) {
       })();
     });
 
-    it("you should be able to curry existing functions", function () {
-      fn = function (fun) {
-        // you can only edit function body here
-      };
-
-      var curryMe = function (x, y, z) {
-        return x / y * z;
-      };
-
-      var a = Math.random(), b = Math.random(), c = Math.random();
-      expect(fn(curryMe)(a, b, c)).to.be(curryMe(a, b, c));
-      expect(fn(curryMe, a)(b, c)).to.be(curryMe(a, b, c));
-      expect(fn(curryMe, a, b)(c)).to.be(curryMe(a, b, c));
-      expect(fn(curryMe, a, b, c)()).to.be(curryMe(a, b, c));
-      expect(fn(curryMe, a, b, c)()).to.be(curryMe(a, b, c));
-      expect(fn(curryMe, b, a, c)()).to.be(curryMe(b, a, c));
-    });
-
     it('you should be able to use closures', function () {
       var arr = [ Math.random(), Math.random(), Math.random(), Math.random() ];
       var doSomeStuff;
@@ -117,6 +99,25 @@ define([ 'use!underscore' ], function(_) {
       _.each(funcs, function(func, i) {
         expect(funcs[i]()).to.be(doSomeStuff(arr[i]));
       });
+    });
+
+
+    it("BONUS: you should be able to curry existing functions", function () {
+      fn = function (fun) {
+        // you can only edit function body here
+      };
+
+      var curryMe = function (x, y, z) {
+        return x / y * z;
+      };
+
+      var a = Math.random(), b = Math.random(), c = Math.random();
+      expect(fn(curryMe)(a, b, c)).to.be(curryMe(a, b, c));
+      expect(fn(curryMe, a)(b, c)).to.be(curryMe(a, b, c));
+      expect(fn(curryMe, a, b)(c)).to.be(curryMe(a, b, c));
+      expect(fn(curryMe, a, b, c)()).to.be(curryMe(a, b, c));
+      expect(fn(curryMe, a, b, c)()).to.be(curryMe(a, b, c));
+      expect(fn(curryMe, b, a, c)()).to.be(curryMe(b, a, c));
     });
   });
 });

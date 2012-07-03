@@ -1,0 +1,17 @@
+<project name="JS Assesment" default="build">
+    <target name="clean">
+        <delete dir="${basedir}/build" />
+    </target>
+
+    <target name="prepare">
+        <mkdir dir="${basedir}/build" />
+    </target>
+
+    <target name="jshint">
+        <exec dir="${basedir}" executable="/usr/local/bin/jshint" output="${basedir}/build/jshint-output.xml">
+            <arg line=". --jslint-reporter" />
+        </exec>
+    </target>
+
+    <target name="build" depends="clean,prepare,jshint" />
+</project>

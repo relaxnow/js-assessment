@@ -9,7 +9,7 @@
 
     <target name="jshint">
         <exec dir="${basedir}" executable="/usr/local/bin/jshint" output="${basedir}/build/jshint-output.xml">
-            <arg line=". --jslint-reporter" />
+            <arg line=". --show-non-errors --jslint-reporter" />
         </exec>
     </target>
 
